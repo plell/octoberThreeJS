@@ -1,7 +1,7 @@
 import { Text } from "@react-three/drei";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Color, Group, MeshStandardMaterial, Vector3 } from "three";
-import { Timeout } from "../../../Stores/types";
+
 import { useFrame } from "@react-three/fiber";
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
   title: string;
 };
 
-let timeout: Timeout = null;
+let timeout: any = null;
 
 const countSpeed = 200;
 
